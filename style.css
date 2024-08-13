@@ -1,0 +1,14 @@
+container {
+    display: flex;
+    flex-direction: column;
+}
+.box {
+    padding: 20px;
+    margin: 5px;
+    background-color: rgb(167, 167, 255);
+}
+
+.imagecontainer{
+    display: flex;
+    flex-direction:row;
+}
