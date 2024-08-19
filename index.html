@@ -1,54 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML 5 Boilerplate</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Carpentry calculator</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <container>
-        <div class="box">
-            <div class="imagecontainer">
-                <p id="pyth_result"></p>
-                <img src="images\triangel_cos_sin.JPG" alt="">
-                <form action="/submit_form" method="POST" id="HeightInput">
-                    <label for="name">Höjd:</label><br>
-                    <input type="text" id="HeightValue" name="name" value="1" size="1" required><br><br>
-                    <!-- <input type="submit" value="Submit"> -->
-                </form>
-            </div>
-            <form action="/submit_form" method="POST" id="LengthInput">
-                <label for="name">Längd:</label><br>
-                <input type="text" id="LengthValue" name="name" value="1" size="1" required><br><br>
-                <!-- <input type="submit" value="Submit"> -->
-            </form>
+    <section class="container">
+      <div class="box">
+        <div class="image-container">
+          <p id="pyth-result"></p>
+          <img src="images\triangel_cos_sin.JPG" alt="" />
+          <form action="/submit_form" method="POST" id="heigth-input">
+            <label for="name">Höjd:</label><br />
+            <input
+              type="text"
+              id="heigth-value"
+              name="name"
+              value="1"
+              size="1"
+              required
+            /><br /><br />
+          </form>
         </div>
+        <form action="/submit_form" method="POST" id="length-input">
+          <label for="name">Längd:</label><br />
+          <input
+            type="text"
+            id="length-value"
+            name="name"
+            value="1"
+            size="1"
+            required
+          /><br /><br />
+        </form>
+      </div>
 
-        <div class="box">
-            <div class="imagecontainer">
-                <p id="cos_sin_result"></p>
-                <img src="images\triangel_cos_sin.JPG" alt="">
-                <form action="/submit_form" method="POST" id="SinHeightInput">
-                    <label for="name">höjd:</label><br>
-                    <input type="text" id="sinHeightValue" name="name" value="1" size="1" required><br><br>
-                    <!-- <input type="submit" value="Submit"> -->
-                </form>
-            </div>
-            <form action="/submit_form" method="POST" id="CosLengthInput" >
-                <label for="name">Längd:</label><br>
-                <input type="text" id="cosLengthValue" name="name" value="1" size="1" required><br><br>
-                <!-- <input type="submit" value="Submit"> -->
-            </form>
-            <form action="/submit_form" method="POST" id="DegreeInput">
-                <label for="name">Grader:</label><br>
-                <input type="text" id="degreeValue" name="name" value="30" size="1" required><br><br>
-                <!-- <input type="submit" value="Submit"> -->
-            </form>
+      <div class="box">
+        <div class="image-container">
+          <p id="tan-result"></p>
+          <img src="images\triangel_cos_sin.JPG" alt="" />
+          <form action="/submit_form" method="POST" id="tan-heigth-input">
+            <label for="name">höjd:</label><br />
+            <input
+              type="text"
+              id="tan-heigth-value"
+              name="name"
+              value="1"
+              size="1"
+              required
+            /><br /><br />
+          </form>
         </div>
-
-    </container>
-	<script src="index.js"></script>
+        <form action="/submit_form" method="POST" id="tan-length-input">
+          <label for="name">Längd:</label><br />
+          <input
+            type="text"
+            id="tan-length-value"
+            name="name"
+            value="1"
+            size="1"
+            required
+          /><br /><br />
+        </form>
+        <form action="/submit_form" method="POST" id="degree-input">
+          <label for="name">Grader:</label><br />
+          <input
+            type="text"
+            id="degree-value"
+            name="name"
+            value="30"
+            size="1"
+            required
+          /><br /><br />
+        </form>
+      </div>
+    </section>
+    <script src="index.js"></script>
   </body>
 </html>

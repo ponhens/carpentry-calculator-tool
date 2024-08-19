@@ -1,51 +1,50 @@
-container {
-    display: flex;
-    flex-direction: column;
+.container {
+  display: flex;
+  flex-direction: column;
 }
 .box {
-    padding: 20px;
-    margin: 5px;
-
+  padding: 20px;
+  margin: 5px;
 }
 
-.box{
-    display: flex;
-    flex-direction:row;
-    position: relative;
+.box {
+  display: flex;
+  flex-direction: row;
+  position: relative;
 }
 
-#LengthInput{
-    position:absolute;
-    left: 150px;
-    top:225px;
+#length-input {
+  position: absolute;
+  left: 150px;
+  top: 225px;
 }
 
-#HeightInput{
-    position:absolute;
-    left: 300px;
-    top:100px;
+#heigth-input {
+  position: absolute;
+  left: 300px;
+  top: 100px;
 }
 
-#pyth_result{
-    position: absolute;
-    top:80px;
-    left: 120px;
+#pyth-result {
+  position: absolute;
+  top: 80px;
+  left: 120px;
 }
 
-#SinHeightInput{
-    position:absolute;
-    left: 300px;
-    top:100px;
+#tan-heigth-input {
+  position: absolute;
+  left: 300px;
+  top: 100px;
 }
 
-#CosLengthInput{
-    position:absolute;
-    left: 160px;
-    top:240px;
+#tan-length-input {
+  position: absolute;
+  left: 160px;
+  top: 240px;
 }
 
-#DegreeInput{
-    position: absolute;
-    top:185px;
-    left: 105px;
+#degree-input {
+  position: absolute;
+  top: 185px;
+  left: 105px;
 }
