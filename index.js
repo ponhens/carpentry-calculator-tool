@@ -11,7 +11,7 @@ function countHypotenuse(){
     console.log("degree " + degree)
 
     
-    document.getElementById('pyth_result').innerText = hypotenuse;
+    document.getElementById('pyth_result').innerText = roundUpToThreeDecimals(hypotenuse);
 }
 
 
@@ -24,7 +24,7 @@ function countCosSin(event){
         const lengthValue = heigthValue / Math.tan(degreeValue * Math.PI / 180);
         // const lengthValue = heightValue/Math.sin(degreeValue * Math.PI / 180.0)
         console.log(lengthValue, " sin")
-        document.getElementById('cosLengthValue').value = lengthValue;
+        document.getElementById('cosLengthValue').value = roundUpToThreeDecimals(lengthValue);
     }
     if(event.target.id == 'cosLengthValue'){
         const lengthValue = event.target.value
@@ -33,14 +33,15 @@ function countCosSin(event){
         // const heightValue = lengthValue*Math.sin(degreeValue * Math.PI / 180.0)
         const heigthValue = lengthValue * Math.tan(degreeValue * Math.PI / 180);
         console.log(heigthValue, " cos")
-        document.getElementById('sinHeightValue').value = heigthValue;
+        document.getElementById('sinHeightValue').value = roundUpToThreeDecimals(heigthValue);
     }
 
     if(event.target.id == 'degreeValue'){
         const degreeValue = event.target.value
         const lengthValue = document.getElementById('cosLengthValue').value
-        const heightValue = lengthValue*Math.sin(degreeValue * Math.PI / 180.0)
-        document.getElementById('sinHeightValue').value = heightValue;
+        // const heightValue = lengthValue*Math.sin(degreeValue * Math.PI / 180.0)
+        const heigthValue = lengthValue * Math.tan(degreeValue * Math.PI / 180);
+        document.getElementById('sinHeightValue').value = roundUpToThreeDecimals(heigthValue);
     }    
 }
 
@@ -57,3 +58,8 @@ document.addEventListener('DOMContentLoaded', function() {
     countCosSin();
 });
 
+
+
+function roundUpToThreeDecimals(num) {
+    return Math.ceil(num * 1000) / 1000;
+}
